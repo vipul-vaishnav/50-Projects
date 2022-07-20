@@ -8,6 +8,19 @@ This is the main repository for all the projects. You can find the live version 
 
 List of all beginners projects.
 
+| S.No. | Project         | Live                                   |
+| ----- | --------------- | -------------------------------------- |
+| 1.    | Expanding Cards | [Live](https://expandify.netlify.app/) |
+| 2.    |                 |                                        |
+| 3.    |                 |                                        |
+| 4.    |                 |                                        |
+| 5.    |                 |                                        |
+| 6.    |                 |                                        |
+| 7.    |                 |                                        |
+| 8.    |                 |                                        |
+| 9.    |                 |                                        |
+| 10.   |                 |                                        |
+
 ## Intermediate Projects
 
 List of all Intermediate Projects.
