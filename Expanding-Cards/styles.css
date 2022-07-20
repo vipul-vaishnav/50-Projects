@@ -1,0 +1,83 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+main {
+  max-width: 100vw;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8rem 8rem;
+  gap: 2rem;
+}
+
+div {
+  cursor: pointer;
+  width: 15rem;
+  height: 100%;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: relative;
+  transition: all 0.4s ease-in-out 0.15s;
+}
+
+div p {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  opacity: 0;
+  background-image: linear-gradient(to right, rgb(229, 93, 135, 0.75), rgb(95, 195, 228, 0.75));
+  /* background-color: rgba(0, 0, 0, 0.75); */
+  color: White;
+  font-size: 7rem;
+  font-weight: 700;
+  display: grid;
+  place-content: center;
+  transition: all 0.3s linear 0.35s;
+}
+
+.active {
+  width: 100%;
+  height: 100%;
+}
+
+.active:hover p {
+  top: 0%;
+  opacity: 1;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
