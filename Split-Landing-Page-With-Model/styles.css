@@ -1,0 +1,183 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media screen and (max-width: 640px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+.main {
+  max-width: 100vw;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.half {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: all 0.65s ease-in-out 0.2s;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  transform: translateY(-50%);
+  padding: 0 2.5rem;
+  text-align: center;
+}
+
+.half:nth-child(1) {
+  background: #373b44; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4286f4, #373b44); /* Chrome 10-25, Safari 5.1-6 */
+  background: url('./assets/mega-x.png'), linear-gradient(to right, #4286f4, #373b44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%, 100%;
+}
+
+.half:nth-child(2) {
+  background: #f12711; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f5af19, #f12711); /* Chrome 10-25, Safari 5.1-6 */
+  background: url('./assets/mega-y.png'), linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%, 100%;
+}
+
+.half h1 {
+  color: white;
+}
+
+.half p {
+  margin-top: 1.5rem;
+  color: white;
+}
+
+button {
+  border: 3px solid white;
+  outline: none;
+  background-color: transparent;
+  font-family: inherit;
+  padding: 1rem 3.5rem;
+  border-radius: 6px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 1.8rem;
+  transition: all 0.2s ease 0.1s;
+  margin-top: 2.5rem;
+}
+
+button:hover {
+  background-color: white;
+  color: #333;
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+.overlay {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  transition: all 0.2s ease 0.1s;
+}
+
+.half:hover {
+  width: 250%;
+}
+
+.half:hover .overlay {
+  top: 0;
+}
+
+.model {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 20px;
+  z-index: 10000;
+  display: none;
+}
+
+.model button {
+  border: 3px solid #333;
+  outline: none;
+  background-color: transparent;
+  font-family: inherit;
+  padding: 1rem 3.5rem;
+  border-radius: 6px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 1.8rem;
+  transition: all 0.2s ease 0.1s;
+  margin-top: 2.5rem;
+}
+
+.model button:hover {
+  background-color: #333;
+  color: white;
+}
+
+.model button:active {
+  transform: scale(0.96);
+}
+
+.mega-overlay {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 1000;
+  display: none;
+}
+
+.active {
+  display: block;
+}
