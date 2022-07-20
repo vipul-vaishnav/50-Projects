@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+  <link rel="shortcut icon" href="./assets/icons8-circled-v-32.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
+  <title>Project Starter</title>
+</head>
+
+<body>
+  <main>
+    <h1>Expense Tracker</h1>
+    <h2>Total: <span class="total">$00.00</span> </h2>
+    <hr />
+    <section>
+      <div>Income: <span class="income">$00.00</span> </div>
+      <div>Expense: <span class="expense">$00.00</span> </div>
+    </section>
+    <form id="form">
+      <h3>Submit to calculate</h3>
+      <div>
+        <label for="value">Amount:</label>
+        <input type="number" name="value" id="value" placeholder="Enter amount..." autocomplete="off" min="0">
+        <div class="error hidden">
+          <div>
+            <span>!</span>
+            <span>
+              Error cannot put negative value
+            </span>
+          </div>
+          <button id="error-close">❌</button>
+        </div>
+      </div>
+      <div>
+        <label for="type">Type:</label>
+        <select name="type" id="type">
+          <option value="income">Income 💲</option>
+          <option value="expense">Expense 💰</option>
+        </select>
+      </div>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </main>
+</body>
+
+</html>
