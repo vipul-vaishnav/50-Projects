@@ -1,0 +1,156 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  background: #4568dc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #b06ab3, #4568dc); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #b06ab3,
+    #4568dc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  max-width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+main {
+  width: 94rem;
+  padding: 1.5rem 2.5rem;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+main p {
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.bar-block {
+  width: 72rem;
+  height: 1rem;
+  margin: 8rem auto;
+  position: relative;
+  border-radius: 20rem;
+}
+
+.step {
+  position: absolute;
+  top: 100%;
+  transform: translateY(-28%);
+}
+
+.step-1 {
+  left: -3%;
+}
+
+.step-2 {
+  left: calc(1 * (100% / 3) - 6%);
+}
+
+.step-3 {
+  left: calc(2 * (100% / 3) - 6%);
+}
+
+.step-4 {
+  left: calc(3 * (100% / 3) - 6%);
+}
+
+.number {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  font-size: 2.4rem;
+  display: grid;
+  place-content: center;
+  background-color: #ced4da;
+  color: white;
+}
+
+.step p {
+  color: #ced4da;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  margin-left: -30%;
+}
+
+.cta {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+
+.btn {
+  border: 3px solid black;
+  outline: none;
+  background-color: transparent;
+  font-family: inherit;
+  padding: 1rem 3.5rem;
+  border-radius: 6px;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 1.8rem;
+  transition: all 0.2s ease 0.1s;
+}
+
+.btn-next {
+  background-color: black;
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.active {
+  color: white;
+  background-color: #40c057;
+}
+
+.fill-0 {
+  background-color: #ced4da;
+}
+
+.fill-1 {
+  background-image: linear-gradient(to right, #40c057 0% 33%, #ced4da 33% 100%);
+}
+
+.fill-2 {
+  background-image: linear-gradient(to right, #40c057 0% 67%, #ced4da 67% 100%);
+}
+
+.fill-3 {
+  background-image: linear-gradient(to right, #40c057 0% 100%, #ced4da 100% 100%);
+}
