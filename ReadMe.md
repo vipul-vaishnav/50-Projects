@@ -14,7 +14,7 @@ List of all beginners projects.
 | 2.    | Progress Bar             | [Live](https://progressify.netlify.app/)        | [Code](https://github.com/vipul-vaishnav/50-Projects/tree/main/Progress-Steps)                |
 | 3.    | Split Landing with Model | [Live](https://charizard-splitify.netlify.app/) | [Code](https://github.com/vipul-vaishnav/50-Projects/tree/main/Split-Landing-Page-With-Model) |
 | 4.    | Expense Tracker          | [Live](https://sasta-sbi.netlify.app/)          | [Code](https://github.com/vipul-vaishnav/50-Projects/tree/main/Expense-Tracker)               |
-| 5.    |                          |                                                 |                                                                                               |
+| 5.    | Password Generator       | [Live](https://clippy-password.netlify.app/)    | [Code](https://github.com/vipul-vaishnav/tree/main/Copy-Clipboard)                            |
 | 6.    |                          |                                                 |                                                                                               |
 | 7.    |                          |                                                 |                                                                                               |
 | 8.    |                          |                                                 |                                                                                               |

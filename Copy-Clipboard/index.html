@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+  <link rel="shortcut icon" href="./assets/icons8-circled-v-32.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
+  <title>Password Generator | 📋</title>
+</head>
+
+<body>
+  <form id="form">
+    <h1>Password Generator</h1>
+    <div class="clip">
+      <input type="text" name="password" placeholder="Your password here" id="password" readonly />
+      <button type="button" id="copy">
+        <i class="ri-clipboard-line"></i>
+      </button>
+    </div>
+    <input type="number" name="length" id="length" min="8" max="24" value="12" placeholder="Length of the password">
+    <div class="checkbox">
+      <label for="uppercase">Include uppercase letters</label>
+      <input type="checkbox" name="uppercase" id="uppercase" checked hidden>
+      <div class="custom-checkbox">
+        <i class="ri-check-line"></i>
+      </div>
+    </div>
+    <div class="checkbox">
+      <label for="lowercase">Include lowercase letters</label>
+      <input type="checkbox" name="lowercase" id="lowercase" checked hidden>
+      <div class="custom-checkbox">
+        <i class="ri-check-line"></i>
+      </div>
+    </div>
+    <div class="checkbox">
+      <label for="number">Include numbers</label>
+      <input type="checkbox" name="number" id="number" checked hidden>
+      <div class="custom-checkbox">
+        <i class="ri-check-line"></i>
+      </div>
+    </div>
+    <div class="checkbox">
+      <label for="symbol">Include symbols</label>
+      <input type="checkbox" name="symbol" id="symbol" checked hidden>
+      <div class="custom-checkbox">
+        <i class="ri-check-line"></i>
+      </div>
+    </div>
+    <button type="submit" id="submit">Generate</button>
+  </form>
+</body>
+
+</html>

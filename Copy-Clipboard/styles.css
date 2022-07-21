@@ -1,0 +1,153 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  max-width: 100vw;
+  min-height: 100vh;
+  background-color: #5f3dc4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  background-color: #9775fa;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  padding: 2.5rem 4rem;
+  border-radius: 4px;
+  color: white;
+}
+
+.clip {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5rem 0;
+}
+
+.clip input {
+  width: 100%;
+  border: 3px solid #5f3dc4;
+  background-color: #e5dbff;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  padding: 1.25rem 2rem;
+  outline: none;
+  font-family: inherit;
+  font-size: 1.8rem;
+}
+
+.clip button {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border: 3px solid #5f3dc4;
+  padding: 1.25rem 2rem;
+  font-size: 2.1rem;
+  background: #d0bfff;
+  border-left-width: 0px;
+  color: white;
+}
+
+.custom-checkbox {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 4px;
+  background: white;
+  border: 3px solid #5f3dc4;
+  color: white;
+  font-weight: 600;
+  display: grid;
+  place-content: center;
+}
+
+input[type='checkbox']:checked ~ .custom-checkbox {
+  background: #7048e8;
+}
+
+#length {
+  width: 100%;
+  border: 3px solid #5f3dc4;
+  background-color: #e5dbff;
+  border-radius: 12px;
+  padding: 1.25rem 2rem;
+  outline: none;
+  font-family: inherit;
+  font-size: 1.8rem;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+
+.checkbox label {
+  color: #e5dbff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#submit {
+  background: #7048e8;
+  color: white;
+  border: 3px solid #7048e8;
+  width: 100%;
+  border-radius: 12px;
+  padding: 1rem 1rem;
+  font-family: inherit;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.25s ease-in-out 0.1s;
+  margin-top: 2.5rem;
+}
+
+#submit:hover {
+  background: transparent;
+  border-color: white;
+  color: white;
+}
+
+@media screen and (max-width: 540px) {
+  html {
+    font-size: 50%;
+  }
+
+  body {
+    padding: 2.5rem;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2.8rem;
+  }
+
+  .clip button {
+    font-size: 2.2rem;
+  }
+}
