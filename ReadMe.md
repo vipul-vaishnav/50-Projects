@@ -15,8 +15,8 @@ List of all beginners projects.
 | 3.    | Split Landing with Model | [Live](https://charizard-splitify.netlify.app/) | [Code](https://github.com/vipul-vaishnav/50-Projects/tree/main/Split-Landing-Page-With-Model) |
 | 4.    | Expense Tracker          | [Live](https://sasta-sbi.netlify.app/)          | [Code](https://github.com/vipul-vaishnav/50-Projects/tree/main/Expense-Tracker)               |
 | 5.    | Password Generator       | [Live](https://clippy-password.netlify.app/)    | [Code](https://github.com/vipul-vaishnav/50-Projects/tree/main/Copy-Clipboard)                |
-| 6.    | Toast Notification       | [Live](https://yummy-toast.netlify.app/)        | [code](https://github.com/vipul-vaishnav/50-Projects/tree/main/Toast-Notification)            |
-| 7.    |                          |                                                 |                                                                                               |
+| 6.    | Toast Notification       | [Live](https://yummy-toast.netlify.app/)        | [Code](https://github.com/vipul-vaishnav/50-Projects/tree/main/Toast-Notification)            |
+| 7.    | Auto Resize TextArea     | [Live](https://size-me.netlify.app/)            | [Code](https://github.com/vipul-vaishnav/50-Projects/tree/main/Auto-Resize-TextArea)          |
 | 8.    |                          |                                                 |                                                                                               |
 | 9.    |                          |                                                 |                                                                                               |
 | 10.   |                          |                                                 |                                                                                               |
