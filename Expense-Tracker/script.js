@@ -30,7 +30,8 @@ error_close.addEventListener('click', () => {
   error.classList.add('hidden');
 });
 
-submit.addEventListener('click', () => {
+submit.addEventListener('click', (e) => {
+  e.preventDefault();
   const amount_value = amount.value;
 
   if (!amount_value || Number(amount_value) === 0) {
